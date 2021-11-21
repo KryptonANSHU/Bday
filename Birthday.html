@@ -2,7 +2,23 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="style.css">
     <style type="text/css">
+
+    
+        /* * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            background-color: #7d7c7c66;
+        } */
+    
       @import url(https://fonts.googleapis.com/css?family=Nobile:400italic,700italic);
       @import url(https://fonts.googleapis.com/css?family=Dancing+Script);
       * {
@@ -11,11 +27,13 @@
         -webkit-box-sizing: border-box;
       }
       body {
-        background: #e5e5e5;
-        background-image: url('bday.jpg');
+        background-color: #7d7c7c66;
+        /* background: url('https://cdn.pixabay.com/photo/2017/08/08/14/39/birthday-2611564_960_720.jpg'); */
+        /* background-repeat: no-repeat; */
         padding: 50px;
       }
 
+    
       #card-front {
         color: #ffdfdf;
       }
@@ -194,9 +212,18 @@
         color: #888;
         text-align: center;
       }
+      #img{
+        width: 100vw;
+        height: 100vh;
+        margin: -70px;
+        position: fixed;
+        z-index: -1212;
+      }
     </style>
   </head>
   <body>
+
+    <img src="https://cdn.pixabay.com/photo/2017/08/08/14/39/birthday-2611564_960_720.jpg" alt="No iMage" id="img">
     <div id="card">
       <div id="card-inside">
         <div class="wrap">
@@ -212,8 +239,11 @@
 
           <center><h4>from</h4></center>
           <p class="signed">Akshita</p>
+        
         </div>
       </div>
+
+      
 
       <div id="card-front">
         <div class="wrap">
@@ -223,6 +253,35 @@
         <button id="close">&lt;</button>
       </div>
     </div>
+<!-- ------------------------------------------------------------------ -->
+
+   
+   
+</head>
+
+<body>
+    <div class="outer">
+        
+        <div class="container   " id="container">
+            <div class="panel " style="background-image: url('./Images/Eren.jpg');">
+                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero nesciunt quis, dolores corrupti adipisci deleniti aspernatur. Laborum beatae, ad reprehenderit vero distinctio cupiditate, recusandae exercitationem quaerat earum hic, provident doloremque.</h3>
+             
+            </div>
+            <div class="panel" style="background-image: url('./Images/Mikasa.jpg');">
+                <h3>MIKASA ACKERMAN</h3>
+            </div>
+            <div class="panel" style="background-image: url('./Images/Levi.jpg');">
+                <h3>LEVI ACKERMAN</h3>
+        </div>
+      
+        
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
 
     <script>
       (function () {
@@ -253,13 +312,11 @@
           }, 1000);
         });
       })();
+
+
+
     </script>
 
-    <div style="visibility: hidden">
-      <embed src="bday.mp3" autostart="true" loop="true" />
-    </div>
-    <div style="visibility: hidden">
-      <embed src="bday.mp3" autostart="true" loop="true" />
-    </div>
+  
   </body>
 </html>
